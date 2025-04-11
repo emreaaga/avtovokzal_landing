@@ -2,112 +2,55 @@ import Link from 'next/link'
 
 export default function Footer() {
   return (
-    <footer className='bg-primary py-8 text-secondary'>
+    <footer className='bg-primary py-10 text-secondary'>
       <div className='container mx-auto px-4 md:px-6 lg:px-8'>
         <div className='grid gap-8 md:grid-cols-2 lg:grid-cols-4'>
+
+
           <div>
-            <h3 className='text-lg font-semibold text-gray-200'>Company</h3>
+            <h3 className='text-lg font-semibold text-gray-200'>Навигация</h3>
             <ul className='mt-4 space-y-2'>
-              <li>
-                <Link className='hover:text-gray-300' href='#'>
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link className='hover:text-gray-300' href='#'>
-                  Team
-                </Link>
-              </li>
-              <li>
-                <Link className='hover:text-gray-300' href='#'>
-                  Careers
-                </Link>
-              </li>
-              <li>
-                <Link className='hover:text-gray-300' href='#'>
-                  Blog
-                </Link>
-              </li>
+              <li><Link className='hover:text-gray-300' href='/'>Главная</Link></li>
+              <li><Link className='hover:text-gray-300' href='/about'>О нас</Link></li>
+              <li><Link className='hover:text-gray-300' href='/news'>Новости</Link></li>
+              <li><Link className='hover:text-gray-300' href='/schedule'>Расписание</Link></li>
             </ul>
           </div>
+
+
           <div>
-            <h3 className='text-lg font-semibold text-gray-200'>Product</h3>
+            <h3 className='text-lg font-semibold text-gray-200'>Документы</h3>
             <ul className='mt-4 space-y-2'>
-              <li>
-                <Link className='hover:text-gray-300' href='#'>
-                  Features
-                </Link>
-              </li>
-              <li>
-                <Link className='hover:text-gray-300' href='#'>
-                  Pricing
-                </Link>
-              </li>
-              <li>
-                <Link className='hover:text-gray-300' href='#'>
-                  Integrations
-                </Link>
-              </li>
-              <li>
-                <Link className='hover:text-gray-300' href='#'>
-                  Documentation
-                </Link>
-              </li>
+              <li><Link className='hover:text-gray-300' href='/terms'>Пользовательское соглашение</Link></li>
+              <li><Link className='hover:text-gray-300' href='/privacy'>Политика конфиденциальности</Link></li>
+              <li><Link className='hover:text-gray-300' href='/offer'>Публичная оферта</Link></li>
             </ul>
           </div>
+
+
           <div>
-            <h3 className='text-lg font-semibold text-gray-200'>Resources</h3>
-            <ul className='mt-4 space-y-2'>
-              <li>
-                <Link className='hover:text-gray-300' href='#'>
-                  Support
-                </Link>
-              </li>
-              <li>
-                <Link className='hover:text-gray-300' href='#'>
-                  Tutorials
-                </Link>
-              </li>
-              <li>
-                <Link className='hover:text-gray-300' href='#'>
-                  Guides
-                </Link>
-              </li>
-              <li>
-                <Link className='hover:text-gray-300' href='#'>
-                  Community
-                </Link>
-              </li>
+            <h3 className='text-lg font-semibold text-gray-200'>Контакты</h3>
+            <ul className='mt-4 space-y-2 text-sm'>
+              <li>г. Ташкент, пр. Бунёдкор, 7</li>
+              <li>+998 71 123 45 67</li>
+              <li><a className='hover:text-gray-300 underline' href='https://t.me/AvtovokzalBot' target='_blank'>@AvtovokzalBot</a></li>
             </ul>
           </div>
+
+
           <div>
-            <h3 className='text-lg font-semibold text-gray-200'>Legal</h3>
+            <h3 className='text-lg font-semibold text-gray-200'>Мы в сети</h3>
             <ul className='mt-4 space-y-2'>
-              <li>
-                <Link className='hover:text-gray-300' href='#'>
-                  Terms of Service
-                </Link>
-              </li>
-              <li>
-                <Link className='hover:text-gray-300' href='#'>
-                  Privacy Policy
-                </Link>
-              </li>
-              <li>
-                <Link className='hover:text-gray-300' href='#'>
-                  Cookie Policy
-                </Link>
-              </li>
-              <li>
-                <Link className='hover:text-gray-300' href='#'>
-                  Disclaimer
-                </Link>
-              </li>
+              <li><a href='https://t.me/AvtovokzalBot' className='hover:text-gray-300'>Telegram</a></li>
+              <li><a href='#' className='hover:text-gray-300'>Instagram</a></li>
+              <li><a href='#' className='hover:text-gray-300'>YouTube</a></li>
             </ul>
           </div>
         </div>
-        <div className='mt-8 border-t border-gray-800 pt-8 text-center'>
-          <p className='text-sm'>© 2024 The Boring Page. All rights reserved.</p>
+
+
+        <div className='mt-10 border-t border-gray-800 pt-6 text-center text-sm text-gray-400'>
+          © 2024 UzAvtovokzal Servis. Все права защищены.
         </div>
       </div>
     </footer>
