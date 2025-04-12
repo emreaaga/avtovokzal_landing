@@ -1,4 +1,9 @@
+'use client'
+import { useTranslation } from "@/lib/useTranslation"
+
 export default function AboutPage() {
+    const t = useTranslation()
+
     return (
       <section className="py-20 px-6 md:px-12">
         <div className="max-w-4xl mx-auto">
@@ -12,6 +17,8 @@ export default function AboutPage() {
           <p>
             Центральный автовокзал в Ташкенте ежедневно обслуживает тысячи пассажиров и является связующим звеном между регионами страны.
           </p>
+          <p>{t.about}</p>
+          <p>{t.greeting}</p>
         </div>
       </section>
     )

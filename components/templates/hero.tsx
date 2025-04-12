@@ -1,9 +1,15 @@
+'use client'
+
 import { Button } from '@/components/molecules/shadcn/button'
+import { useTranslation } from '@/lib/useTranslation'
+import Link from 'next/link'
 import Image from 'next/image'
 import { AspectRatio } from '../molecules/shadcn/aspect-ratio'
 import { Input } from '../molecules/shadcn/input'
 
 export default function Hero() {
+  const t = useTranslation()
+
   return (
     <section
       className="relative bg-cover bg-center bg-no-repeat py-28"
@@ -15,16 +21,16 @@ export default function Hero() {
       <div className="absolute inset-0 bg-black/50" /> 
 
       <div className="relative z-10 container mx-auto px-4 md:px-6 lg:px-8 text-white text-center">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">
-        Надёжные поездки по всей стране
-        </h1>
-        <p className="text-lg md:text-xl text-gray-200 mb-8">
-          Удобное бронирование билетов на междугородние и международные рейсы — быстро, безопасно и просто.
-        </p>
+        <h1 className="text-4xl md:text-5xl font-bold mb-4">{t.hero.title}</h1>
+        <p className="text-lg md:text-xl text-gray-200 mb-8">{t.hero.description}</p>
         <div className="flex justify-center gap-4 flex-wrap">
-          <Button>Купить билет</Button>
-          <Button variant="secondary">Подробнее о сервисе</Button>
-
+          <a href="https://avtoticket.uz/" target="_blank" rel="noopener noreferrer">
+            <Button>{t.hero.button_buy}</Button>
+          </a>
+          <Link href="/about">
+            <Button variant="secondary">{t.hero.button_more}</Button>
+          </Link>
+          
         </div>
       </div>
     </section>

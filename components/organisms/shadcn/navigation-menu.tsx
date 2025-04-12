@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import * as React from 'react'
+import { useTranslation } from '@/lib/useTranslation'
 
 import {
   NavigationMenu,
@@ -14,27 +15,29 @@ import {
 import { cn } from '@/lib/utils'
 
 export function NavigationMenuDemo() {
+  const t = useTranslation()
+
   return (
     <NavigationMenu>
       <NavigationMenuList>
       <NavigationMenuItem>
           <Link href='/' legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>Главное</NavigationMenuLink>
+            <NavigationMenuLink className={navigationMenuTriggerStyle()}>{t.header[1]}</NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <Link href='/about' legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>О нас</NavigationMenuLink>
+            <NavigationMenuLink className={navigationMenuTriggerStyle()}>{t.header[2]}</NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <Link href='/' legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>Новости</NavigationMenuLink>
+            <NavigationMenuLink className={navigationMenuTriggerStyle()}>{t.header[3]}</NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <Link href='/' legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>Корпоративные отчеты</NavigationMenuLink>
+            <NavigationMenuLink className={navigationMenuTriggerStyle()}>{t.header[4]}</NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
       </NavigationMenuList>
