@@ -13,7 +13,11 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: 'yuz.uz'
-      }
+      },
+      {
+        protocol: 'https',
+        hostname: 'pechater.ru'
+      },
     ],
   },
 }

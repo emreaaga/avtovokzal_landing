@@ -6,7 +6,24 @@
     "4": "Korporativ hisobotlar"
   },
   "greeting": "Salom, dunyo!",
-  "about": "Biz haqimizda",
+  "about": {
+    "title": "Avtovokzal haqida",
+    "tabs": {
+      "about": "Kompaniya haqida",
+      "team": "Rahbariyat"
+    },
+    "content": "«UzAvtovokzal Servis» MChJ O'zbekiston bo'ylab bir qator davlat avtovokzal va avtostansiyalarini operativ boshqarish bilan shug‘ullanadi. Kompaniyaning asosiy maqsadi — qulay va xavfsiz yo‘lovchi tashishni ta’minlash.",
+    "team": {
+      "director": {
+        "title": "Bosh direktor",
+        "name": "Abdurashidov Sherzod Rahmatillayevich"
+      },
+      "manager": {
+        "title": "Direktor o‘rinbosari",
+        "name": "Ismoilov Azizbek Ahadovich"
+      }
+    }
+  },
   "hero": {
     "title": "Butun mamlakat bo'ylab ishonchli sayohatlar",
     "description": "Shaharlararo va xalqaro yo'nalishlarga chiptalarni tez, xavfsiz va oson bron qilish.",
@@ -14,68 +31,68 @@
     "button_more": "Xizmat haqida batafsil"
   },
   "features": {
-      "title": "Biz sayohatni osonlashtiramiz",
-      "subtitle": "O'zbekiston bo'ylab qulay harakatlanish uchun kerakli barcha xizmatlar — bir joyda.",
-      "cards": {
-        "booking": {
-          "title": "Qulay bron qilish",
-          "text": "Yo‘nalishni tanlang va bir necha daqiqada onlayn to‘lang."
-        },
-        "buses": {
-          "title": "Qulay avtobuslar",
-          "text": "Yumshoq o‘rindiqlar, konditsionerlar, muloyim haydovchilar."
-        },
-        "coverage": {
-          "title": "Hududlar bo'yicha qamrov",
-          "text": "Butun mamlakat va tashqarisiga reyslar."
-        },
-        "support": {
-          "title": "24/7 qo‘llab-quvvatlash",
-          "text": "Operatorlarimiz kecha-kunduz aloqada."
-        }
+    "title": "Biz sayohatni osonlashtiramiz",
+    "subtitle": "O'zbekiston bo'ylab qulay harakatlanish uchun kerakli barcha xizmatlar — bir joyda.",
+    "cards": {
+      "booking": {
+        "title": "Qulay bron qilish",
+        "text": "Yo‘nalishni tanlang va bir necha daqiqada onlayn to‘lang."
+      },
+      "buses": {
+        "title": "Qulay avtobuslar",
+        "text": "Yumshoq o‘rindiqlar, konditsionerlar, muloyim haydovchilar."
+      },
+      "coverage": {
+        "title": "Hududlar bo'yicha qamrov",
+        "text": "Butun mamlakat va tashqarisiga reyslar."
+      },
+      "support": {
+        "title": "24/7 qo‘llab-quvvatlash",
+        "text": "Operatorlarimiz kecha-kunduz aloqada."
       }
-    },
-    "contact": {
-      "title": "Aloqa va joylashuv",
-      "description": "Biz Toshkent shahrining qulay hududida joylashganmiz. Bizga jamoat transporti, taksi yoki piyoda yetib kelishingiz mumkin.",
-      "address": {
-        "label": "Manzil",
-        "value": "Toshkent shahri, Chilonzor tumani, Bunyodkor prospekti, 7-uy"
-      },
-      "phone": {
-        "label": "Telefon",
-        "value": "+99871 207-87-00"
-      },
-      "email": {
-        "label": "Elektron pochta",
-        "value": "avtovokzal@mintrans.uz"
-      },
-      "button_route": "Yoʻnalishni ko‘rsatish"
-    },
-    "footer": {
-      "navigation": "Navigatsiya",
-      "documents": "Hujjatlar",
-      "contacts": "Aloqa",
-      "social": "Biz internetda",
-      "links": {
-        "home": "Bosh sahifa",
-        "about": "Biz haqimizda",
-        "news": "Yangiliklar",
-        "schedule": "Jadval",
-        "terms": "Foydalanuvchi kelishuvi",
-        "privacy": "Maxfiylik siyosati",
-        "offer": "Ommaviy oferta"
-      },
-      "contact_info": {
-        "address": "Toshkent shahri, Bunyodkor ko'chasi, 7-uy",
-        "phone": "+998 71 123 45 67",
-        "telegram": "@AvtovokzalBot"
-      },
-      "social_links": {
-        "telegram": "Telegram",
-        "instagram": "Instagram",
-        "youtube": "YouTube"
-      },
-      "copyright": "© 2024 UzAvtovokzal Servis. Barcha huquqlar himoyalangan."
     }
+  },
+  "contact": {
+    "title": "Aloqa va joylashuv",
+    "description": "Biz Toshkent shahrining qulay hududida joylashganmiz. Bizga jamoat transporti, taksi yoki piyoda yetib kelishingiz mumkin.",
+    "address": {
+      "label": "Manzil",
+      "value": "Toshkent shahri, Chilonzor tumani, Bunyodkor prospekti, 7-uy"
+    },
+    "phone": {
+      "label": "Telefon",
+      "value": "+99871 207-87-00"
+    },
+    "email": {
+      "label": "Elektron pochta",
+      "value": "avtovokzal@mintrans.uz"
+    },
+    "button_route": "Yoʻnalishni ko‘rsatish"
+  },
+  "footer": {
+    "navigation": "Navigatsiya",
+    "documents": "Hujjatlar",
+    "contacts": "Aloqa",
+    "social": "Biz internetda",
+    "links": {
+      "home": "Bosh sahifa",
+      "about": "Biz haqimizda",
+      "news": "Yangiliklar",
+      "schedule": "Jadval",
+      "terms": "Foydalanuvchi kelishuvi",
+      "privacy": "Maxfiylik siyosati",
+      "offer": "Ommaviy oferta"
+    },
+    "contact_info": {
+      "address": "Toshkent shahri, Bunyodkor ko'chasi, 7-uy",
+      "phone": "+998 71 123 45 67",
+      "telegram": "@AvtovokzalBot"
+    },
+    "social_links": {
+      "telegram": "Telegram",
+      "instagram": "Instagram",
+      "youtube": "YouTube"
+    },
+    "copyright": "© 2024 UzAvtovokzal Servis. Barcha huquqlar himoyalangan."
+  }
 }
