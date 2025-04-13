@@ -9,7 +9,6 @@ export default function WaitingList() {
       <div className="container mx-auto px-4 md:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           
-          {/* Карта */}
           <div className="rounded-xl overflow-hidden shadow-lg border border-gray-200 h-[300px]">
             <iframe
               src="https://yandex.uz/map-widget/v1/-/CHVXuE-~"
@@ -20,7 +19,6 @@ export default function WaitingList() {
             />
           </div>
 
-          {/* Контактная информация */}
           <div className="space-y-6">
             <div className="space-y-2">
               <h2 className="text-3xl font-bold">{t.contact.title}</h2>
