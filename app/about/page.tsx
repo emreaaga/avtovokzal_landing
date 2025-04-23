@@ -69,7 +69,6 @@ export default function AboutPage() {
                             <h4 className="text-lg font-semibold">{member.name}</h4>
                             <p className="text-sm text-gray-500">{member.position}</p>
                           </div>
-                          <p className="text-sm text-muted-foreground">{member.description}</p>
                         </CardContent>
                       </Card>
                     </div>
