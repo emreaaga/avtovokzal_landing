@@ -13,16 +13,20 @@
       "team": "Rahbariyat"
     },
     "content": "«UzAvtovokzal Servis» MChJ O'zbekiston bo'ylab bir qator davlat avtovokzal va avtostansiyalarini operativ boshqarish bilan shug‘ullanadi. Kompaniyaning asosiy maqsadi — qulay va xavfsiz yo‘lovchi tashishni ta’minlash.",
-    "team": {
-      "director": {
+    "team": [
+      {
         "title": "Bosh direktor",
-        "name": "Abdurashidov Sherzod Rahmatillayevich"
+        "name": "Abdurashidov Sherzod"
       },
-      "manager": {
+      {
         "title": "Direktor o‘rinbosari",
-        "name": "Ismoilov Azizbek Ahadovich"
+        "name": "Ismoilov Azizbek"
+      },
+      {
+        "title": "Bosh buxgalter",
+        "name": "Sobirov Elyor"
       }
-    }
+    ]
   },
   "hero": {
     "title": "Butun mamlakat bo'ylab ishonchli sayohatlar",

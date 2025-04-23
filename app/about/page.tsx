@@ -12,22 +12,10 @@ import {
 import { Card, CardContent } from "@/components/molecules/shadcn/card"
 import Image from "next/image"
 
-const teamMembers = [
-  {
-    name: "Абдурашидов Шерзод",
-    position: "Генеральный директор",
-    image: "https://pechater.ru/wp-content/uploads/2019/08/foto-ot-pechaterfoto-krasivo.jpg",
-  },
-  {
-    name: "Исмоилов Азизбек",
-    position: "Заместитель директора",
-    image: "https://pechater.ru/wp-content/uploads/2019/08/Krasivye-foto-na-dokumenty-1.jpg",
-  },
-  {
-    name: "Собиров Элёр",
-    position: "Финансовый директор",
-    image: "https://pechater.ru/wp-content/uploads/2019/04/Foto-na-dokumenty-ot-pechaterfoto-3.jpg",
-  }
+const teamPicture = [
+    "https://pechater.ru/wp-content/uploads/2019/08/foto-ot-pechaterfoto-krasivo.jpg",
+    "https://pechater.ru/wp-content/uploads/2019/08/Krasivye-foto-na-dokumenty-1.jpg",
+    "https://pechater.ru/wp-content/uploads/2019/04/Foto-na-dokumenty-ot-pechaterfoto-3.jpg"
 ]
 
 export default function AboutPage() {
@@ -53,13 +41,13 @@ export default function AboutPage() {
           <TabsContent value="team">
             <Carousel className="w-full max-w-4xl mx-auto">
               <CarouselContent>
-                {teamMembers.map((member, index) => (
+                {t.about.team.map((member, index) => (
                   <CarouselItem key={index} className="basis-full sm:basis-1/2 md:basis-1/3">
                     <div className="p-4">
                       <Card className="h-full">
                         <CardContent className="p-4 flex flex-col items-center text-center gap-4">
                           <Image
-                            src={member.image}
+                            src={teamPicture[index]}
                             alt={member.name}
                             width={120}
                             height={120}
@@ -67,7 +55,7 @@ export default function AboutPage() {
                           />
                           <div>
                             <h4 className="text-lg font-semibold">{member.name}</h4>
-                            <p className="text-sm text-gray-500">{member.position}</p>
+                            <p className="text-sm text-gray-500">{member.title}</p>
                           </div>
                         </CardContent>
                       </Card>
