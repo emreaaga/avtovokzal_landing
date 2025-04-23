@@ -35,11 +35,6 @@ export function NavigationMenuDemo() {
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>{t.header[3]}</NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
-        <NavigationMenuItem>
-          <Link href='/' legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>{t.header[4]}</NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
   )

@@ -17,21 +17,17 @@ const teamMembers = [
     name: "Абдурашидов Шерзод",
     position: "Генеральный директор",
     image: "https://pechater.ru/wp-content/uploads/2019/08/foto-ot-pechaterfoto-krasivo.jpg",
-    description: "Руководит стратегическим развитием компании и контролирует ключевые процессы."
   },
   {
     name: "Исмоилов Азизбек",
     position: "Заместитель директора",
     image: "https://pechater.ru/wp-content/uploads/2019/08/Krasivye-foto-na-dokumenty-1.jpg",
-    description: "Отвечает за операционные процессы и координацию между отделами."
   },
   {
     name: "Собиров Элёр",
     position: "Финансовый директор",
     image: "https://pechater.ru/wp-content/uploads/2019/04/Foto-na-dokumenty-ot-pechaterfoto-3.jpg",
-    description: "Осуществляет контроль за финансовыми потоками компании и бюджетированием."
   }
-  // Добавь ещё сотрудников при необходимости
 ]
 
 export default function AboutPage() {

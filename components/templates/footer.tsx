@@ -34,7 +34,7 @@ export default function Footer() {
             <ul className='mt-4 space-y-2 text-sm'>
               <li>{t.footer.contact_info.address}</li>
               <li>{t.footer.contact_info.phone}</li>
-              <li><a className='hover:text-gray-300 underline' href='https://t.me/AvtovokzalBot' target='_blank'>{t.footer.contact_info.telegram}</a></li>
+              <li><a href={`mailto:${t.contact.email.value}`}>{t.contact.email.value}</a></li>
             </ul>
           </div>
 
