@@ -31,7 +31,7 @@ export function NavigationMenuDemo() {
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href='/' legacyBehavior passHref>
+          <Link href='/news' legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>{t.header[3]}</NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
