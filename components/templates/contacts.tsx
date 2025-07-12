@@ -1,7 +1,7 @@
 'use client'
 import { useTranslation } from '@/lib/useTranslation'
 
-export default function WaitingList() {
+export default function Contacts() {
   const t = useTranslation()
 
   return (

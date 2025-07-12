@@ -98,5 +98,45 @@
       "youtube": "YouTube"
     },
     "copyright": "© 2024 UzAvtovokzal Servis. Barcha huquqlar himoyalangan."
+  },
+  "faq": {
+    "title": "Ko‘p so‘raladigan savollar",
+    "items": [
+      {
+        "question": "Onlayn chipta qanday sotib olinadi?",
+        "answer": [
+          "Saytimizda yo‘nalish, sana va jo‘nash vaqtini tanlashingiz mumkin. Shundan so‘ng chiptani bank kartasi orqali onlayn to‘lang.",
+          "To‘lovdan so‘ng elektron chipta sizning email manzilingizga yuboriladi yoki shaxsiy kabinetingizda mavjud bo‘ladi."
+        ]
+      },
+      {
+        "question": "Safar sanasi yoki vaqtini o‘zgartirish mumkinmi?",
+        "answer": [
+          "Ha, sanani yoki jo‘nash vaqtini o‘zgartirishingiz mumkin. Buning uchun reysdan kamida 3 soat oldin qo‘llab-quvvatlash xizmatimiz bilan bog‘laning.",
+          "Yangi reysda bo‘sh o‘rinlar mavjud bo‘lsa, chipta qayta rasmiylashtiriladi."
+        ]
+      },
+      {
+        "question": "Chiptani qanday qaytarish mumkin?",
+        "answer": [
+          "Chiptani jo‘nashdan oldin to‘liq yoki qisman qaytarishingiz mumkin. Buning uchun onlayn chat orqali yoki issiq liniyaga qo‘ng‘iroq qiling.",
+          "To‘lov pullari siz to‘lagan kartaga 3-5 ish kuni ichida qaytariladi."
+        ]
+      },
+      {
+        "question": "Agar avtobusga kechiksam nima bo‘ladi?",
+        "answer": [
+          "Agar siz kechsangiz, chipta foydalanilgan hisoblanadi. Kamida 30 daqiqa oldin avtovokzalga yetib kelishingizni tavsiya qilamiz.",
+          "Agar kechikayotganingizni bilsangiz, biz bilan bog‘laning — sizga chipta qayta rasmiylashtirishga harakat qilamiz."
+        ]
+      },
+      {
+        "question": "Qo‘llab-quvvatlash bilan qanday bog‘lanish mumkin?",
+        "answer": [
+          "Bizning qo‘llab-quvvatlash xizmatimiz 24/7 ishlaydi. Saytda chat orqali yozishingiz, telefon orqali qo‘ng‘iroq qilishingiz yoki email orqali xabar yuborishingiz mumkin.",
+          "Barcha kontaktlar «Aloqa va joylashuv» bo‘limida ko‘rsatilgan."
+        ]
+      }
+    ]
   }
 }

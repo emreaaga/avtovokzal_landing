@@ -1,5 +1,6 @@
 'use client'
 
+import * as React from 'react'
 import { useTranslation } from "@/lib/useTranslation"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/molecules/shadcn/tabs'
 import {
@@ -10,13 +11,92 @@ import {
   CarouselPrevious,
 } from "@/components/molecules/shadcn/carousel"
 import { Card, CardContent } from "@/components/molecules/shadcn/card"
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/molecules/shadcn/tooltip"
 import Image from "next/image"
 
 const teamPicture = [
-    "https://pechater.ru/wp-content/uploads/2019/08/foto-ot-pechaterfoto-krasivo.jpg",
-    "https://pechater.ru/wp-content/uploads/2019/08/Krasivye-foto-na-dokumenty-1.jpg",
-    "https://pechater.ru/wp-content/uploads/2019/04/Foto-na-dokumenty-ot-pechaterfoto-3.jpg"
+  "https://pechater.ru/wp-content/uploads/2019/08/foto-ot-pechaterfoto-красиво.jpg",
+  "https://pechater.ru/wp-content/uploads/2019/08/Kрасивые-фото-на-документы-1.jpg",
+  "https://pechater.ru/wp-content/uploads/2019/04/Foto-на-документы-от-печaterfoto-3.jpg"
 ]
+
+// Примерная SVG-карта Узбекистана с областями
+function UzbekistanMap() {
+  return (
+    <TooltipProvider>
+      <div className="map-wrapper mx-auto">
+        <svg viewBox="0 0 200 150" className="w-full max-w-md">
+          {/* Ташкентская область */}
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <path
+                d="M100,10 L180,10 L180,60 L100,60 Z"
+                className="region"
+              />
+            </TooltipTrigger>
+            <TooltipContent>Ташкентская область</TooltipContent>
+          </Tooltip>
+
+          {/* Самаркандская область */}
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <path
+                d="M60,70 L140,70 L140,120 L60,120 Z"
+                className="region"
+              />
+            </TooltipTrigger>
+            <TooltipContent>Самаркандская область</TooltipContent>
+          </Tooltip>
+
+          {/* Бухарская область */}
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <path
+                d="M10,80 L70,80 L70,140 L10,140 Z"
+                className="region"
+              />
+            </TooltipTrigger>
+            <TooltipContent>Бухарская область</TooltipContent>
+          </Tooltip>
+
+          {/* Ферганская область */}
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <path
+                d="M150,80 L190,80 L190,130 L150,130 Z"
+                className="region"
+              />
+            </TooltipTrigger>
+            <TooltipContent>Ферганская область</TooltipContent>
+          </Tooltip>
+
+          {/* Хорезмская область */}
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <path
+                d="M10,10 L60,10 L60,50 L10,50 Z"
+                className="region"
+              />
+            </TooltipTrigger>
+            <TooltipContent>Хорезмская область</TooltipContent>
+          </Tooltip>
+        </svg>
+      </div>
+      <style jsx>{`
+        .region {
+          fill: #e5e7eb;
+          stroke: #374151;
+          stroke-width: 1;
+          cursor: pointer;
+          transition: fill 0.2s;
+        }
+        .region:hover {
+          fill: #2563EB;
+        }
+      `}</style>
+    </TooltipProvider>
+  )
+}
 
 export default function AboutPage() {
   const t = useTranslation()
@@ -68,6 +148,11 @@ export default function AboutPage() {
             </Carousel>
           </TabsContent>
         </Tabs>
+
+        <div className="mt-12">
+          <h2 className="text-2xl font-semibold mb-4 text-center">Карта Узбекистана</h2>
+          <UzbekistanMap />
+        </div>
       </div>
     </section>
   )
