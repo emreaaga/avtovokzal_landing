@@ -1,5 +1,5 @@
 import MountainIcon from '@/components/icons/mountain-icon'
-import { NavigationMenuDemo } from '@/components/organisms/shadcn/navigation-menu'
+import { NavigationMenuHeader } from '@/components/organisms/shadcn/navigation-menu'
 import Link from 'next/link'
 import { LanguageSwitcher } from '@/components/organisms/shadcn/LanguageSwitcher'
 
@@ -11,7 +11,7 @@ export default function Header() {
         <span className='ml-2 text-lg font-semibold'>Avtovokzal</span>
       </Link>
       <nav className='hidden space-x-4 md:flex'>
-        <NavigationMenuDemo></NavigationMenuDemo>
+        <NavigationMenuHeader/>
       </nav>
       <LanguageSwitcher/>
     </header>
