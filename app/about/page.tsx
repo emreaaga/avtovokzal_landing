@@ -10,19 +10,15 @@ import "yet-another-react-lightbox/styles.css"
 import { Card, CardContent } from "@/components/molecules/shadcn/card"
 import { AspectRatio } from "@/components/molecules/shadcn/aspect-ratio"
 
-
 const galleryPictures = [
   {
     src: "/images/outside.jpg",
-    alt: "Вид автовокзала снаружи",
   },
   {
     src: "/images/inside.jpg",
-    alt: "Зал ожидания внутри",
   },
   {
     src: "/images/perons.jpg",
-    alt: "Парковка автобусов",
   },
 ]
 
@@ -34,7 +30,7 @@ export default function AboutPage() {
   return (
     <section className="py-20 px-6 md:px-12">
       <div className="max-w-6xl mx-auto">
-        <h1 className="text-2xl md:text-4xl font-bold mb-10 text-center">
+        <h1 className="text-xl md:text-2xl font-bold mb-10 text-center">
           {t.about.title}
         </h1>
         <p className="text-gray-700 leading-relaxed text-center max-w-3xl mx-auto">
@@ -42,10 +38,9 @@ export default function AboutPage() {
         </p>
 
         <div className="mt-16">
-          <h2 className="text-2xl font-semibold mb-6 text-center">
-            Фотогалерея автовокзала
+          <h2 className="text-2xl font-semibold mb-2 text-center">
+            {t.gallery.title}
           </h2>
-          
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {galleryPictures.map((image, idx) => (
@@ -59,19 +54,20 @@ export default function AboutPage() {
                     <AspectRatio ratio={16 / 9} className="overflow-hidden">
                       <Image
                         src={image.src}
-                        alt={image.alt}
+                        alt={t.gallery.images[idx].alt}
                         fill
                         className="object-cover group-hover:scale-105 transition-transform duration-500"
                       />
                     </AspectRatio>
                     <div className="px-4 py-3 text-center text-sm text-muted-foreground font-medium">
-                      {image.alt}
+                      {t.gallery.images[idx].alt}
                     </div>
                   </CardContent>
                 </Card>
               </div>
             ))}
           </div>
+
           <Lightbox
             open={index >= 0}
             close={() => setIndex(-1)}

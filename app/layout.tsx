@@ -8,9 +8,9 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'The Boring Page',
-  description: 'An open-source landing page template built with Next.js and all shadcn/ui components.',
-  icons: '/favicon.svg',
+  title: 'Toshkent Avtovokzal',
+  description: 'Toshkent avtovokzalining rasmiy sayti: avtobuslar jadvali, chipta sotib olish, yangiliklar va foydali maʼlumotlar.',
+  icons: '/logo.svg',
 }
 
 export default function RootLayout({

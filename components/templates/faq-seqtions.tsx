@@ -27,7 +27,9 @@ export default function FaqSections() {
               <AccordionTrigger>{item.question}</AccordionTrigger>
               <AccordionContent className="flex flex-col gap-4 text-balance">
                 {item.answer.map((paragraph, i) => (
-                  <p key={i}>{paragraph}</p>
+                  <p key={i} className="text-muted-foreground">
+                    {paragraph}
+                  </p>
                 ))}
               </AccordionContent>
             </AccordionItem>

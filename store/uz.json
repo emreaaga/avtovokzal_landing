@@ -138,5 +138,58 @@
         ]
       }
     ]
+  },
+  "gallery": {
+    "title": "Avtovokzal fotogalereyasi",
+    "description": "Quyida bizning avtovokzalning tashqi ko‘rinishi, kutish zali va perronlarini ko‘rishingiz mumkin. Har bir foto real hayotdan olingan.",
+    "images": [
+      {
+        "alt": "Avtovokzal tashqi ko‘rinishi"
+      },
+      {
+        "alt": "Kutish zali ichki qismi"
+      },
+      {
+        "alt": "Avtobuslar perroni"
+      }
+    ]
+  },
+  "team": {
+    "title": "Kompaniya rahbariyati",
+    "description": "Bizning jamoamiz — ko‘p yillik tajribaga ega mutaxassislar. Biz kompaniya rivojlanishini oshkora boshqaramiz va yo‘lovchilar uchun ishonchli xizmatni kafolatlaymiz.",
+    "contact_title": "Rahbariyat bilan bog‘lanish",
+    "contact_text": "Siz rasmiy e-mail orqali murojaat yuborishingiz yoki savol berishingiz mumkin.",
+    "contact_email": "avtovokzal@mintrans.uz"
+  },
+  "news": {
+    "title": "Yangiliklar va yangilanishlar",
+    "description": "So‘nggi yangiliklar, jadval o‘zgarishlari, aksiyalar va voqealarni kuzatib boring.",
+    "read_more": "Batafsil o‘qish →",
+    "items": [
+      {
+        "id": 1,
+        "cover": "/news/samarkand_test.jpg",
+        "date": "2025-yil 10-iyul",
+        "title": "Toshkent – Samarqand yangi yo‘nalishi ochildi",
+        "excerpt": "Endi yo‘lovchilar zamonaviy avtobuslar tufayli tezroq yetib olishlari mumkin...",
+        "slug": "new-route-tashkent-samarkand"
+      },
+      {
+        "id": 2,
+        "cover": "/news/test_avto.jpg",
+        "date": "2025-yil 5-iyul",
+        "title": "Markaziy avtovokzalda kutish zallari ta’mirlash ishlari",
+        "excerpt": "Kutish zallariga yangi o‘rindiqlar va konditsioner tizimlari o‘rnatildi...",
+        "slug": "waiting-hall-renovation"
+      },
+      {
+        "id": 3,
+        "cover": "/news/happy.jpg",
+        "date": "2025-yil 30-iyun",
+        "title": "Yoshlar kuni bilan!",
+        "excerpt": "Bugun orzu sari intilayotgan yoshlarimizning bayrami! Toshkent avtovokzali — yoshlarga yangi imkoniyatlar ochadigan joy!",
+        "slug": "youth-day-2025"
+      }
+    ]
   }
 }
