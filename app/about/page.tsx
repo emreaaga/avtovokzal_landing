@@ -6,20 +6,15 @@ import { useTranslation } from "@/lib/useTranslation"
 import Image from "next/image"
 import Lightbox from "yet-another-react-lightbox"
 import "yet-another-react-lightbox/styles.css"
+import UzbekistanMap from '@/components/icons/interactive-map'
 
 import { Card, CardContent } from "@/components/molecules/shadcn/card"
 import { AspectRatio } from "@/components/molecules/shadcn/aspect-ratio"
 
 const galleryPictures = [
-  {
-    src: "/images/outside.jpg",
-  },
-  {
-    src: "/images/inside.jpg",
-  },
-  {
-    src: "/images/perons.jpg",
-  },
+  { src: "/images/outside.jpg" },
+  { src: "/images/inside.jpg" },
+  { src: "/images/perons.jpg" },
 ]
 
 export default function AboutPage() {
@@ -30,12 +25,27 @@ export default function AboutPage() {
   return (
     <section className="py-20 px-6 md:px-12">
       <div className="max-w-6xl mx-auto">
-        <h1 className="text-xl md:text-2xl font-bold mb-10 text-center">
-          {t.about.title}
-        </h1>
-        <p className="text-gray-700 leading-relaxed text-center max-w-3xl mx-auto">
-          {t.about.content}
-        </p>
+        <div className="flex flex-col md:flex-row md:space-x-12 md:items-center">
+
+          <div className="flex-1 md:basis-[30%] md:max-w-[30%] mb-8 md:mb-0">
+            <div className="max-w-sm">
+              <h1 className="text-xl md:text-2xl font-bold mb-6 text-center md:text-left">
+                {t.about.title}
+              </h1>
+              <p className="text-gray-700 leading-relaxed text-center md:text-left">
+                {t.about.content}
+              </p>
+            </div>
+          </div>
+
+
+          <div className="flex-1 md:basis-[70%] md:max-w-[70%] flex justify-center">
+            <div className="w-full ">
+              <UzbekistanMap />
+            </div>
+          </div>
+
+        </div>
 
         <div className="mt-16">
           <h2 className="text-2xl font-semibold mb-2 text-center">
@@ -56,8 +66,12 @@ export default function AboutPage() {
                         src={image.src}
                         alt={t.gallery.images[idx].alt}
                         fill
+                        sizes="(max-width: 768px) 100vw, 
+                            (max-width: 1024px) 50vw, 
+                            33vw"
                         className="object-cover group-hover:scale-105 transition-transform duration-500"
                       />
+
                     </AspectRatio>
                     <div className="px-4 py-3 text-center text-sm text-muted-foreground font-medium">
                       {t.gallery.images[idx].alt}
