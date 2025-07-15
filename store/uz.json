@@ -1,18 +1,18 @@
 {
   "header": {
     "1": "Bosh sahifa",
-    "2": "Avtovokzal haqida",
+    "2": "Uzavtovokzal haqida",
     "3": "Yangiliklar",
     "4": "Korporativ hisobotlar"
   },
   "greeting": "Salom, dunyo!",
   "about": {
-    "title": "Avtovokzal haqida",
+    "title": "«Uzavtovokzal MCHJ» haqida",
     "tabs": {
       "about": "Kompaniya haqida",
       "team": "Rahbariyat"
     },
-    "content": "«UzAvtovokzal Servis» MChJ O'zbekiston bo'ylab bir qator davlat avtovokzal va avtostansiyalarini operativ boshqarish bilan shug‘ullanadi. Kompaniyaning asosiy maqsadi — qulay va xavfsiz yo‘lovchi tashishni ta’minlash.",
+    "content": "«Uzavtovokzal Servis» MChJ O'zbekiston bo'ylab bir qator davlat avtovokzal va avtostansiyalarini operativ boshqarish bilan shug‘ullanadi. Kompaniyaning asosiy maqsadi — qulay va xavfsiz yo‘lovchi tashishni ta’minlash.",
     "team": [
       {
         "title": "Bosh direktor",
@@ -39,7 +39,7 @@
     "subtitle": "O'zbekiston bo'ylab qulay harakatlanish uchun kerakli barcha xizmatlar — bir joyda.",
     "cards": {
       "booking": {
-        "title": "Qulay bron qilish",
+        "title": "Onlayn chipta harid qilish",
         "text": "Yo‘nalishni tanlang va bir necha daqiqada onlayn to‘lang."
       },
       "buses": {
@@ -140,7 +140,7 @@
     ]
   },
   "gallery": {
-    "title": "Avtovokzal fotogalereyasi",
+    "title": "Uzavtovokzal Tashkent fotogalereyasi",
     "description": "Quyida bizning avtovokzalning tashqi ko‘rinishi, kutish zali va perronlarini ko‘rishingiz mumkin. Har bir foto real hayotdan olingan.",
     "images": [
       {

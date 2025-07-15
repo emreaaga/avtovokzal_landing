@@ -140,6 +140,7 @@ export default function UzbekistanMap() {
                         fill={isHovered('Ferghana') ? '#3498DB' : '#5DADE2'}
                         onMouseEnter={() => setHoverId('Ferghana')}
                         onMouseLeave={() => setHoverId(null)}
+                        style={{ cursor: 'pointer' }}
                         onClick={() =>
                             setSelectedId((prev) => (prev === 'Ferghana' ? null : 'Ferghana'))
                         } />
@@ -147,6 +148,7 @@ export default function UzbekistanMap() {
                         fill={isHovered('Tashkent') ? '#3498DB' : '#5DADE2'}
                         onMouseEnter={() => setHoverId('Tashkent')}
                         onMouseLeave={() => setHoverId(null)}
+                        style={{ cursor: 'pointer' }}
                         onClick={() =>
                             setSelectedId((prev) => (prev === 'Tashkent' ? null : 'Tashkent'))
                         } />
@@ -154,6 +156,7 @@ export default function UzbekistanMap() {
                         fill={isHovered('Namangan') ? '#3498DB' : '#5DADE2'}
                         onMouseEnter={() => setHoverId('Namangan')}
                         onMouseLeave={() => setHoverId(null)}
+                        style={{ cursor: 'pointer' }}
                         onClick={() =>
                             setSelectedId((prev) => (prev === 'Namangan' ? null : 'Namangan'))
                         } />
@@ -161,6 +164,7 @@ export default function UzbekistanMap() {
                         fill={isHovered('Andijon') ? '#3498DB' : '#5DADE2'}
                         onMouseEnter={() => setHoverId('Andijon')}
                         onMouseLeave={() => setHoverId(null)}
+                        style={{ cursor: 'pointer' }}
                         onClick={() =>
                             setSelectedId((prev) => (prev === 'Andijon' ? null : 'Andijon'))
                         } />
@@ -168,6 +172,7 @@ export default function UzbekistanMap() {
                         fill={isHovered('Sirdaryo') ? '#3498DB' : '#5DADE2'}
                         onMouseEnter={() => setHoverId('Sirdaryo')}
                         onMouseLeave={() => setHoverId(null)}
+                        style={{ cursor: 'pointer' }}
                         onClick={() =>
                             setSelectedId((prev) => (prev === 'Sirdaryo' ? null : 'Sirdaryo'))
                         } />
@@ -175,6 +180,7 @@ export default function UzbekistanMap() {
                         fill={isHovered('Jizzakh') ? '#3498DB' : '#5DADE2'}
                         onMouseEnter={() => setHoverId('Jizzakh')}
                         onMouseLeave={() => setHoverId(null)}
+                        style={{ cursor: 'pointer' }}
                         onClick={() =>
                             setSelectedId((prev) => (prev === 'Jizzakh' ? null : 'Jizzakh'))
                         } />
@@ -182,6 +188,7 @@ export default function UzbekistanMap() {
                         fill={isHovered('Samarkand') ? '#3498DB' : '#5DADE2'}
                         onMouseEnter={() => setHoverId('Samarkand')}
                         onMouseLeave={() => setHoverId(null)}
+                        style={{ cursor: 'pointer' }}
                         onClick={() =>
                             setSelectedId((prev) => (prev === 'Samarkand' ? null : 'Samarkand'))
                         } />
@@ -189,6 +196,7 @@ export default function UzbekistanMap() {
                         fill={isHovered('Kashkadarya') ? '#3498DB' : '#5DADE2'}
                         onMouseEnter={() => setHoverId('Kashkadarya')}
                         onMouseLeave={() => setHoverId(null)}
+                        style={{ cursor: 'pointer' }}
                         onClick={() =>
                             setSelectedId((prev) => (prev === 'Kashkadarya' ? null : 'Kashkadarya'))
                         } />
@@ -196,6 +204,7 @@ export default function UzbekistanMap() {
                         fill={isHovered('Surkhandarya') ? '#3498DB' : '#5DADE2'}
                         onMouseEnter={() => setHoverId('Surkhandarya')}
                         onMouseLeave={() => setHoverId(null)}
+                        style={{ cursor: 'pointer' }}
                         onClick={() =>
                             setSelectedId((prev) => (prev === 'Surkhandarya' ? null : 'Surkhandarya'))
                         } />
@@ -203,6 +212,7 @@ export default function UzbekistanMap() {
                         fill={isHovered('Karakalpakstan') ? '#3498DB' : '#5DADE2'}
                         onMouseEnter={() => setHoverId('Karakalpakstan')}
                         onMouseLeave={() => setHoverId(null)}
+                        style={{ cursor: 'pointer' }}
                         onClick={() =>
                             setSelectedId((prev) => (prev === 'Karakalpakstan' ? null : 'Karakalpakstan'))
                         } />
@@ -210,6 +220,7 @@ export default function UzbekistanMap() {
                         fill={isHovered('Navoi') ? '#3498DB' : '#5DADE2'}
                         onMouseEnter={() => setHoverId('Navoi')}
                         onMouseLeave={() => setHoverId(null)}
+                        style={{ cursor: 'pointer' }}
                         onClick={() =>
                             setSelectedId((prev) => (prev === 'Navoi' ? null : 'Navoi'))
                         } />
@@ -217,6 +228,7 @@ export default function UzbekistanMap() {
                         fill={isHovered('Khorezm') ? '#3498DB' : '#5DADE2'}
                         onMouseEnter={() => setHoverId('Khorezm')}
                         onMouseLeave={() => setHoverId(null)}
+                        style={{ cursor: 'pointer' }}
                         onClick={() =>
                             setSelectedId((prev) => (prev === 'Khorezm' ? null : 'Khorezm'))
                         } />
@@ -224,6 +236,7 @@ export default function UzbekistanMap() {
                         fill={isHovered('Bukhoro') ? '#3498DB' : '#5DADE2'}
                         onMouseEnter={() => setHoverId('Bukhoro')}
                         onMouseLeave={() => setHoverId(null)}
+                        style={{ cursor: 'pointer' }}
                         onClick={() =>
                             setSelectedId((prev) => (prev === 'Bukhoro' ? null : 'Bukhoro'))
                         } />
@@ -232,6 +245,7 @@ export default function UzbekistanMap() {
                         id="UZTK"
                         fill={isHovered('Tashkent') ? '#3498DB' : '#5DADE2'}
                         onMouseEnter={() => setHoverId('Tashkent')}
+                        style={{ cursor: 'pointer' }}
                         onMouseLeave={() => setHoverId(null)}
                     />
                 </g>
@@ -317,16 +331,18 @@ export default function UzbekistanMap() {
                         />
                     </SheetTrigger>
 
-                    <SheetContent side="right" className="w-[300px] sm:w-[400px]">
+                    <SheetContent side="right" className="w-[200px] sm:w-[300px]">
                         <SheetHeader>
                             <SheetTitle>{city.name}</SheetTitle>
                             <SheetDescription>Филиал автовокзала</SheetDescription>
                         </SheetHeader>
-                        <div className="mt-4 text-sm text-muted-foreground">
-                            {/* Здесь можешь добавить подробности о городе */}
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+                        <div className="mt-4 text-sm text-muted-foreground space-y-2">
+                            <p><span className="font-medium text-primary">Рабочее время:</span> 09:00 - 18:00</p>
+                            <p><span className="font-medium text-primary">Эл. почта:</span> info@mintrans.uz</p>
                         </div>
                     </SheetContent>
+
                 </Sheet>
             ))}
         </>
