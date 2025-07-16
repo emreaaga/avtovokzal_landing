@@ -10,6 +10,35 @@ import UzbekistanMap from '@/components/icons/interactive-map'
 
 import { Card, CardContent } from "@/components/molecules/shadcn/card"
 import { AspectRatio } from "@/components/molecules/shadcn/aspect-ratio"
+import { CheckCircle } from 'lucide-react'
+import {
+  Building,
+  Wifi,
+  Lock,
+  Baby,
+  Coffee,
+  Train,
+  MoveVertical,
+  Ticket,
+  Info,
+  Users,
+  Bed
+} from 'lucide-react'
+
+const facilitiesIcons = [
+  Building,     // Зал ожидания
+  Wifi,         // Wi-Fi
+  Lock,         // Камера хранения
+  Baby,         // Комната матери и ребенка
+  Coffee,       // Кафе
+  Train,        // Станция метро
+  MoveVertical, // Лифт / Эскалатор
+  Ticket,       // Билетные кассы
+  Info,         // Информационные табло
+  Users,        // Туалет (альтернатива)
+  Bed           // Хостел
+]
+
 
 const galleryPictures = [
   { src: "/images/outside.jpg" },
@@ -26,7 +55,6 @@ export default function AboutPage() {
     <section className="py-20 px-6 md:px-12 overflow-x-hidden">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row md:space-x-12 md:items-center">
-
           <div className="flex-1 md:basis-[30%] md:max-w-[30%] mb-8 md:mb-0">
             <div className="max-w-sm">
               <h1 className="text-xl md:text-2xl font-bold mb-6 text-center md:text-left">
@@ -38,14 +66,31 @@ export default function AboutPage() {
             </div>
           </div>
 
-
           <div className="flex-1 md:basis-[70%] md:max-w-[70%] flex justify-center">
             <div className="w-full translate-y-4">
               <UzbekistanMap />
             </div>
           </div>
-
         </div>
+
+        <div className="mt-20 bg-gray-50 py-12 rounded-2xl">
+          <h2 className="text-2xl font-semibold mb-6 text-center">
+            {t.about.facilitiesTitle}
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            {t.about.facilitiesList.map((item, idx) => {
+              const Icon = facilitiesIcons[idx] || CheckCircle
+              return (
+                <Card key={idx} className="p-4 flex items-start gap-4 rounded-xl border border-gray-200 hover:shadow-md hover:scale-[1.02] transition-transform duration-300">
+                  <Icon className="w-5 h-5 text-primary mt-1" />
+                  <CardContent className="p-0 text-gray-700 text-sm">{item}</CardContent>
+                </Card>
+              )
+            })}
+
+          </div>
+        </div>
+
 
         <div className="mt-16">
           <h2 className="text-2xl font-semibold mb-2 text-center">
@@ -81,7 +126,6 @@ export default function AboutPage() {
               </div>
             ))}
           </div>
-
           <Lightbox
             open={index >= 0}
             close={() => setIndex(-1)}
