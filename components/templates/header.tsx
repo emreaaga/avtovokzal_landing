@@ -15,7 +15,7 @@ export default function Header() {
         <Image src="/logo.svg" alt="Avtovokzal Logo" width={32} height={32} />
         <span className="ml-2 text-lg font-semibold">Uzavtovokzal</span>
       </Link>
-
+      
       <nav className="hidden space-x-4 md:flex">
         <NavigationMenuHeader />
       </nav>

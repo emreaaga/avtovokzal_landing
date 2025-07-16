@@ -15,8 +15,8 @@
     "content": "«Uzavtovokzal Servis» MChJ O'zbekiston bo'ylab bir qator davlat avtovokzal va avtostansiyalarini operativ boshqarish bilan shug‘ullanadi. Kompaniyaning asosiy maqsadi — qulay va xavfsiz yo‘lovchi tashishni ta’minlash.",
     "team": [
       {
-        "title": "Bosh direktor",
-        "name": "Abdurashidov Sherzod"
+        "title": "«Uzavtovokzal servis» MCHJ direktori",
+        "name": "Rasulov Durbek Ravshanovich"
       },
       {
         "title": "Direktor o‘rinbosari",
@@ -48,7 +48,7 @@
       },
       "coverage": {
         "title": "Hududlar bo'yicha qamrov",
-        "text": "Butun mamlakat va tashqarisiga reyslar."
+        "text": "Shaharlararo va xalqaro yoʻnalishlarda reyslar."
       },
       "support": {
         "title": "24/7 qo‘llab-quvvatlash",
@@ -65,7 +65,7 @@
     },
     "phone": {
       "label": "Telefon",
-      "value": "+99871 207-87-00"
+      "value": "+998 71 207-87-00"
     },
     "email": {
       "label": "Elektron pochta",
@@ -82,14 +82,14 @@
       "home": "Bosh sahifa",
       "about": "Biz haqimizda",
       "news": "Yangiliklar",
-      "schedule": "Jadval",
+      "team": "Rahbariyat",
       "terms": "Foydalanuvchi kelishuvi",
       "privacy": "Maxfiylik siyosati",
       "offer": "Ommaviy oferta"
     },
     "contact_info": {
       "address": "Toshkent shahri, Bunyodkor ko'chasi, 7-uy",
-      "phone": "+998 71 123 45 67",
+      "phone": "+99871 207-87-00",
       "telegram": "@AvtovokzalBot"
     },
     "social_links": {
@@ -97,7 +97,7 @@
       "instagram": "Instagram",
       "youtube": "YouTube"
     },
-    "copyright": "© 2024 UzAvtovokzal Servis. Barcha huquqlar himoyalangan."
+    "copyright": "© 2019 Uzavtovokzal Servis. Barcha huquqlar himoyalangan."
   },
   "faq": {
     "title": "Ko‘p so‘raladigan savollar",
