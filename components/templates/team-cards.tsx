@@ -4,6 +4,8 @@ import * as React from 'react'
 import Image from "next/image"
 import { Card } from "@/components/molecules/shadcn/card"
 import { motion } from "framer-motion"
+import { Avatar, AvatarFallback } from "@/components/molecules/shadcn/avatar"
+
 
 interface TeamMember {
   name: string
@@ -15,7 +17,7 @@ interface TeamCardsProps {
 }
 
 const teamPicture = [
-  "/teams/test_team.png",
+  "/teams/director.jpeg",
   "/teams/test_team.png",
   "/teams/test_team.png"
 ]
@@ -32,13 +34,15 @@ export default function TeamCards({ members }: TeamCardsProps) {
           viewport={{ once: true }}
         >
           <Card className="flex flex-col items-center text-center p-6 shadow-sm hover:shadow-md transition">
-            <Image
-              src={teamPicture[index]}
-              alt={member.name}
-              width={120}
-              height={120}
-              className="rounded-lg object-cover mb-4"
-            />
+            <Avatar className="w-24 h-24 mb-4">
+              <AvatarFallback>
+                {member.name
+                  .split(" ")
+                  .map((w) => w[0])
+                  .join("")}
+              </AvatarFallback>
+            </Avatar>
+
             <h4 className="text-lg font-semibold">{member.name}</h4>
             <p className="text-sm text-muted-foreground">{member.title}</p>
           </Card>

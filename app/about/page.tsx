@@ -26,17 +26,17 @@ import {
 } from 'lucide-react'
 
 const facilitiesIcons = [
-  Building,     // Зал ожидания
-  Wifi,         // Wi-Fi
-  Lock,         // Камера хранения
-  Baby,         // Комната матери и ребенка
-  Coffee,       // Кафе
-  Train,        // Станция метро
-  MoveVertical, // Лифт / Эскалатор
-  Ticket,       // Билетные кассы
-  Info,         // Информационные табло
-  Users,        // Туалет (альтернатива)
-  Bed           // Хостел
+  Building,     
+  Wifi,         
+  Lock,         
+  Baby,         
+  Coffee,       
+  Train,        
+  MoveVertical, 
+  Ticket,       
+  Info,         
+  Users,        
+  Bed           
 ]
 
 

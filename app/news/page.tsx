@@ -36,12 +36,11 @@ export default function NewsPage() {
                 <p className="text-sm text-muted-foreground mb-2">{item.date}</p>
                 <h2 className="text-lg font-semibold mb-2">{item.title}</h2>
                 <p className="text-sm text-gray-700 mb-4">{item.excerpt}</p>
-                <Link
-                  href={`/${item.slug}`}
-                  className="inline-block text-primary hover:underline font-medium"
+                <p
+                  className="inline-block text-primary hover:underline font-medium cursor-pointer"
                 >
                   {t.news.read_more}
-                </Link>
+                </p>
               </div>
             </div>
           ))}
