@@ -26,17 +26,17 @@ import {
 } from 'lucide-react'
 
 const facilitiesIcons = [
-  Building,     
-  Wifi,         
-  Lock,         
-  Baby,         
-  Coffee,       
-  Train,        
-  MoveVertical, 
-  Ticket,       
-  Info,         
-  Users,        
-  Bed           
+  Building,
+  Wifi,
+  Lock,
+  Baby,
+  Coffee,
+  Train,
+  MoveVertical,
+  Ticket,
+  Info,
+  Users,
+  Bed
 ]
 
 
@@ -73,24 +73,27 @@ export default function AboutPage() {
           </div>
         </div>
 
-        <div className="mt-20 bg-gray-50 py-12 rounded-2xl">
-          <h2 className="text-2xl font-semibold mb-6 text-center">
+        <div className="mt-20 bg-gray-50 py-12 px-4 sm:px-6 md:px-8 rounded-2xl">
+          <h2 className="text-xl sm:text-2xl font-semibold mb-6 text-center">
             {t.about.facilitiesTitle}
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
             {t.about.facilitiesList.map((item, idx) => {
               const Icon = facilitiesIcons[idx] || CheckCircle
               return (
-                <Card key={idx} className="p-4 flex items-start gap-4 rounded-xl border border-gray-200 hover:shadow-md hover:scale-[1.02] transition-transform duration-300">
-                  <Icon className="w-5 h-5 text-primary mt-1" />
-                  <CardContent className="p-0 text-gray-700 text-sm">{item}</CardContent>
+                <Card
+                  key={idx}
+                  className="p-3 sm:p-4 flex items-start gap-3 sm:gap-4 rounded-xl border border-gray-200 hover:shadow-md hover:scale-[1.02] transition-transform duration-300"
+                >
+                  <Icon className="w-6 h-6 sm:w-5 sm:h-5 text-primary mt-1" />
+                  <CardContent className="p-0 text-gray-700 text-sm sm:text-base">
+                    {item}
+                  </CardContent>
                 </Card>
               )
             })}
-
           </div>
         </div>
-
 
         <div className="mt-16">
           <h2 className="text-2xl font-semibold mb-2 text-center">
